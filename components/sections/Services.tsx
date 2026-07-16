@@ -1,4 +1,4 @@
-export default function Services() {
+export default function Services({ id }: { id?: string }) {
   const services = [
     { name: "Мужская стрижка", price: "1500 ₽", time: "60 мин" },
     { name: "Борода + оформление", price: "1000 ₽", time: "40 мин" },
@@ -7,7 +7,7 @@ export default function Services() {
   ];
 
   return (
-    <section className="py-20 px-4 md:px-8 lg:px-16 bg-[#1a1a1a]">
+    <section id={id} className="py-20 px-4 md:px-8 lg:px-16 bg-[#1a1a1a]">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
           <span className="text-[#D4A05A]">Услуги</span> и цены

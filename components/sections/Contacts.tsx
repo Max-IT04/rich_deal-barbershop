@@ -1,6 +1,6 @@
-export default function Contacts() {
+export default function Contacts({ id }: { id?: string }) {
   return (
-    <section className="py-20 px-4 md:px-8 lg:px-16 bg-[#111]">
+    <section id={id} className="py-20 px-4 md:px-8 lg:px-16 bg-[#111]">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
           <span className="text-[#D4A05A]">Контакты</span> и локация
@@ -10,7 +10,6 @@ export default function Contacts() {
         </p>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Левая колонка - контакты */}
           <div className="space-y-6">
             <h3 className="text-xl font-semibold text-white">Свяжитесь с нами</h3>
             
@@ -40,7 +39,6 @@ export default function Contacts() {
               </a>
             </div>
 
-            {/* График работы */}
             <div className="p-4 bg-[#222] rounded-lg">
               <h4 className="text-sm text-gray-400 mb-2">🕐 График работы</h4>
               <p className="text-white">Пн-Пт: 10:00 – 21:00</p>
@@ -48,7 +46,6 @@ export default function Contacts() {
             </div>
           </div>
 
-          {/* Правая колонка - карта */}
           <div>
             <h3 className="text-xl font-semibold text-white mb-4">Как нас найти</h3>
             <div className="rounded-lg overflow-hidden border border-gray-800 h-[300px]">

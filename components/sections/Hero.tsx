@@ -2,9 +2,8 @@ import Button from "@/components/ui/Button";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center px-4 md:px-8 lg:px-16 py-20">
+    <section className="min-h-screen flex items-center px-4 md:px-8 lg:px-16 py-20 pt-20">
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        {/* Левый блок - текст */}
         <div className="space-y-6 text-center lg:text-left">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
             <span className="text-[#D4A05A]">RICH DEAL</span>
@@ -23,11 +22,10 @@ export default function Hero() {
             </Button>
           </div>
           <p className="text-sm text-gray-500 pt-4">
-            📞 +7 (999) 123-45-67
+            📞 +7 (928) 650-11-21
           </p>
         </div>
 
-        {/* Правый блок - фото */}
         <div className="relative flex justify-center lg:justify-end">
           <div className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-[#D4A05A]">
             <img

@@ -13,7 +13,7 @@ type PhotoCategories = {
   [key: string]: string[];
 };
 
-export default function Portfolio() {
+export default function Portfolio({ id }: { id?: string }) {
   const [active, setActive] = useState<number>(0);
 
   const categories: Category[] = [
@@ -34,7 +34,7 @@ export default function Portfolio() {
   const currentPhotos: string[] = photos[currentCategory] || [];
 
   return (
-    <section className="py-20 px-4 md:px-8 lg:px-16 bg-[#111]">
+    <section id={id} className="py-20 px-4 md:px-8 lg:px-16 bg-[#111]">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
           <span className="text-[#D4A05A]">Примеры</span> работ
@@ -43,7 +43,6 @@ export default function Portfolio() {
           Реальные работы нашего барбера
         </p>
 
-        {/* Табы */}
         <div className="flex flex-wrap justify-center gap-3 mb-10">
           {categories.map((item) => (
             <button
@@ -60,7 +59,6 @@ export default function Portfolio() {
           ))}
         </div>
 
-        {/* Сетка фото */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {currentPhotos.map((src: string, idx: number) => (
             <div
@@ -78,7 +76,6 @@ export default function Portfolio() {
           ))}
         </div>
 
-        {/* Если фото нет */}
         {currentPhotos.length === 0 && (
           <p className="text-center text-gray-500 py-10">
             Фото в этой категории скоро появятся

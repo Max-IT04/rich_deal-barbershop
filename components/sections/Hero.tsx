@@ -14,7 +14,7 @@ export default function Hero() {
             Стильные стрижки и бороды. Работаем с душой.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <Button href="https://vk.com/your_link" variant="primary">
+            <Button href="https://vk.ru/26bar_ber26" variant="primary">
               Записаться
             </Button>
             <Button href="https://t.me/your_link" variant="secondary">

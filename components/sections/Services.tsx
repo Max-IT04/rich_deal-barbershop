@@ -29,7 +29,6 @@ export default function Services({ id }: { id?: string }) {
             >
               <div>
                 <h3 className="text-lg font-semibold text-white">{item.name}</h3>
-                <span className="text-sm text-gray-500">{item.time}</span>
               </div>
               <span className="text-xl font-bold text-[#D4A05A] mt-2 sm:mt-0">
                 {item.price}
